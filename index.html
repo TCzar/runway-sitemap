@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Runway Sitemap v12</title>
+<style>
+
+
+    :root {
+      --bg: #f7f8fb;
+      --card: #ffffff;
+      --text: #1f2430;
+      --muted: #5b6474;
+      --line: #d9deea;
+      --accent: #4f46e5;
+      --accent-soft: #eef0ff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    header {
+      background: linear-gradient(135deg, #10131d 0%, #23283a 100%);
+      color: #fff;
+      padding: 32px 20px 24px;
+    }
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    h1 { margin: 0 0 8px; font-size: 2rem; }
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.35rem;
+      border-bottom: 2px solid var(--line);
+      padding-bottom: 8px;
+    }
+    h3 { margin: 18px 0 8px; font-size: 1.05rem; }
+    p { margin: 0 0 12px; }
+    .subtitle { color: #dbe2ff; max-width: 900px; }
+    .topnav {
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 5;
+    }
+    .topnav .wrap {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      padding: 12px 20px;
+    }
+    .topnav a {
+      text-decoration: none;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 8px 10px;
+      border-radius: 999px;
+      font-size: 0.95rem;
+    }
+    main { padding: 24px 20px 40px; }
+    section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 22px 20px;
+      margin: 0 0 18px;
+      box-shadow: 0 4px 16px rgba(24, 38, 74, 0.05);
+    }
+    ul { margin: 10px 0 0 20px; padding: 0; }
+    li { margin: 6px 0; }
+    a { color: var(--accent); }
+    .small { color: var(--muted); font-size: 0.95rem; }
+    .note {
+      border-left: 4px solid var(--accent);
+      background: var(--accent-soft);
+      padding: 12px 14px;
+      border-radius: 8px;
+      margin: 12px 0 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+    }
+    .mini {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 12px;
+      background: #fff;
+    }
+    code {
+      background: #f0f2f7;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+      font-size: 0.95em;
+    }
+    footer {
+      padding: 14px 20px 40px;
+      color: var(--muted);
+    }
+  
+
+    .legend-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 22px 20px;
+      margin: 0 0 18px;
+      box-shadow: 0 4px 16px rgba(24, 38, 74, 0.05);
+    }
+    .legend-card ul { margin-top: 10px; }
+    .internal-route {
+      color: #8a5a00;
+      text-decoration: underline;
+      text-decoration-style: dotted;
+    }
+    .status-note {
+      color: #7a5a16;
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+    .nolink { font-weight: 700; }
+    .small { color: var(--muted); font-size: 0.95rem; }
+    .verification-key {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .verification-key .mini {
+      background: #fff;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+    section li {
+      padding: 1px 0;
+    }
+    section ul ul {
+      margin-top: 6px;
+      margin-bottom: 8px;
+    }
+
+  
+
+    .path-note {
+      border-left: 4px solid var(--accent);
+      background: var(--accent-soft);
+      padding: 12px 14px;
+      border-radius: 8px;
+      margin: 12px 0;
+      color: var(--muted);
+    }
+    .route-note {
+      color: #7a5a16;
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+    .internal-route {
+      color: #8a5a00;
+      text-decoration: underline;
+      text-decoration-style: dotted;
+    }
+    .nolink {
+      font-weight: 700;
+    }
+    .small {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .compact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+      margin: 12px 0;
+    }
+
+  </style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<h1>Runway Sitemap v12</h1>
+<p class="subtitle">A practical, user-facing navigation sitemap for the Runway domain, organized by how a user would actually move through Runway: entry points, the signed-in app workspace, creation tools, models and workflows, assets, account management, and support.</p>
+</div>
+</header>
+<nav aria-label="Table of contents" class="topnav">
+<div class="wrap">
+<a href="#entry-points">Entry Points</a>
+<a href="#app-workspace">App Workspace</a>
+<a href="#creation-tools">Creation Tools</a>
+<a href="#models-workflows">Models &amp; Workflows</a>
+<a href="#assets">Assets</a>
+<a href="#account-billing">Account &amp; Billing</a>
+<a href="#support-learning">Support &amp; Learning</a>
+<a href="#verification-note">Link Confidence Note</a>
+</div>
+</nav>
+<main>
+<div class="wrap">
+<section id="entry-points">
+<h2>1. Primary Runway Entry Points</h2>
+<p class="path-note">Start here when opening Runway, checking plans, signing in, or finding official documentation.</p>
+<ul>
+<li><a href="https://runwayml.com/" rel="noopener noreferrer" target="_blank">Runway Home</a> <span class="small">— Main public website.</span></li>
+<li><a class="internal-route" href="https://app.runwayml.com/" rel="noopener noreferrer" target="_blank">Runway App</a> <span class="small">— Main signed-in app entry point.</span></li>
+<li><a href="https://app.runwayml.com/login" rel="noopener noreferrer" target="_blank">Sign In</a> <span class="small">— Login entry point.</span></li>
+<li><a href="https://runwayml.com/pricing" rel="noopener noreferrer" target="_blank">Pricing</a> <span class="small">— Plans and credits overview.</span></li>
+<li><a href="https://runwayml.com/changelog" rel="noopener noreferrer" target="_blank">Changelog</a> <span class="small">— Product updates and release notes.</span></li>
+<li><a href="https://help.runwayml.com/hc/en-us" rel="noopener noreferrer" target="_blank">Help Center</a> <span class="small">— Official documentation hub.</span></li>
+<li><a href="https://academy.runwayml.com/" rel="noopener noreferrer" target="_blank">Runway Academy</a> <span class="small">— Official learning hub.</span></li>
+<li><a href="https://watch.runwayml.com/" rel="noopener noreferrer" target="_blank">Runway Watch</a> <span class="small">— Public watch site.</span></li>
+</ul>
+</section>
+<section id="app-workspace">
+<h2>2. App Workspace and Main Navigation</h2>
+<p class="path-note">These are the major areas a signed-in user sees or uses while navigating the Runway app.</p>
+<div class="compact-grid">
+<div class="mini">
+<h3><a class="internal-route" href="https://app.runwayml.com/" rel="noopener noreferrer" target="_blank">Dashboard / Home</a></h3>
+<p class="small">Main app shell and workspace landing area. Use the signed-in app entry point, then navigate through the app sidebar. Also see <a href="https://help.runwayml.com/hc/en-us/articles/24298206897043-Navigating-Runway" rel="noopener noreferrer" target="_blank">Navigating Runway</a>.</p>
+</div>
+<div class="mini">
+<h3><a href="https://help.runwayml.com/hc/en-us/articles/33545310653203-Generating-with-Sessions" rel="noopener noreferrer" target="_blank">Sessions</a></h3>
+<p class="small">Project/session containers and generation history.</p>
+</div>
+<div class="mini">
+<h3><a class="internal-route" href="https://app.runwayml.com/" rel="noopener noreferrer" target="_blank">Apps</a></h3>
+<p class="small">Catalog of image, video, audio, model, and workflow tools. Also see <a href="https://help.runwayml.com/hc/en-us/articles/45570040112531-Creating-with-Apps" rel="noopener noreferrer" target="_blank">Creating with Apps</a>.</p>
+</div>
+<div class="mini">
+<h3><a class="internal-route" href="https://app.runwayml.com/workflows" rel="noopener noreferrer" target="_blank">Workflows</a></h3>
+<p class="small">Workflow entry point and node-based creation area. Also see <a href="https://help.runwayml.com/hc/en-us/articles/45763528999699-Introduction-to-Workflows" rel="noopener noreferrer" target="_blank">Introduction to Workflows</a>.</p>
+</div>
+<div class="mini">
+<h3><a class="internal-route" href="https://app.runwayml.com/characters" rel="noopener noreferrer" target="_blank">Characters</a></h3>
+<p class="small">Character-oriented app area. Also see <a href="https://runwayml.com/product/characters" rel="noopener noreferrer" target="_blank">Characters product page</a> and <a href="https://help.runwayml.com/hc/en-us/articles/49557780326163-Runway-Characters" rel="noopener noreferrer" target="_blank">Runway Characters</a>.</p>
+</div>
+<div class="mini">
+<h3><a class="internal-route" href="https://app.runwayml.com/watch" rel="noopener noreferrer" target="_blank">Runway Watch</a></h3>
+<p class="small">In-app watch area, with public counterpart at <a href="https://watch.runwayml.com/" rel="noopener noreferrer" target="_blank">watch.runwayml.com</a>.</p>
+</div>
+</div>
+<h3>In-session navigation</h3>
+<ul>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/45570040112531-Creating-with-Apps" rel="noopener noreferrer" target="_blank">Apps</a> <span class="small">— Tool access inside a session.</span></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/42290974553875-Creating-with-Chat-Mode" rel="noopener noreferrer" target="_blank">Chat</a> <span class="small">— Conversational creation/editing mode.</span></li>
+<li><span class="nolink">Custom</span> <span class="small">— Manual or custom tool mode; relevant public references include <a href="https://help.runwayml.com/hc/en-us/articles/51111417337363-Creating-images-with-GPT-Image-2" rel="noopener noreferrer" target="_blank">GPT Image 2 in Custom mode</a> and <a href="https://help.runwayml.com/hc/en-us/articles/51243511607827-Upscaling-an-image-with-Magnific-Precision-v2" rel="noopener noreferrer" target="_blank">Magnific Precision v2 in Custom tab</a>.</span></li>
+<li><span class="nolink">Recents</span> <span class="small">— Recent items inside session context; no confident standalone public URL found.</span></li>
+</ul>
+</section>
+<section id="creation-tools">
+<h2>3. Creation Tools</h2>
+<p class="path-note">Use this section when choosing what to make or modify: image, video, audio, advertising, character work, or finishing tools.</p>
+<h3>Image tools</h3>
+<ul>
+<li><a class="internal-route" href="https://app.runwayml.com/?app=expand-image" rel="noopener noreferrer" target="_blank">Expand Image</a> — <a href="https://help.runwayml.com/hc/en-us/articles/50986194044435-Expand-Image" rel="noopener noreferrer" target="_blank">help article</a></li>
+<li><a class="internal-route" href="https://app.runwayml.com/?app=change-style" rel="noopener noreferrer" target="_blank">Stylize Image</a> — <a href="https://help.runwayml.com/hc/en-us/articles/50984425962131-Stylize-Image" rel="noopener noreferrer" target="_blank">help article</a></li>
+<li><a class="internal-route" href="https://app.runwayml.com/?app=vary" rel="noopener noreferrer" target="_blank">Vary Image</a> — <a href="https://help.runwayml.com/hc/en-us/articles/50984866197523-Vary-Image" rel="noopener noreferrer" target="_blank">help article</a></li>
+<li><a class="internal-route" href="https://app.runwayml.com/?app=mockup-generator" rel="noopener noreferrer" target="_blank">Mockup</a> — <a href="https://help.runwayml.com/hc/en-us/articles/50984956601107-Mockup" rel="noopener noreferrer" target="_blank">help article</a></li>
+<li><a class="internal-route" href="https://app.runwayml.com/?app=ad-generator" rel="noopener noreferrer" target="_blank">Create Ad</a> — <a href="https://help.runwayml.com/hc/en-us/articles/50985073403283-Create-Ad" rel="noopener noreferrer" target="_blank">help article</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/50926961511187-Ad-Concepter" rel="noopener noreferrer" target="_blank">Ad Concepter</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/50984458662675-Product-Reshoot" rel="noopener noreferrer" target="_blank">Product Reshoot</a></li>
+<li><a class="internal-route" href="https://app.runwayml.com/?workflowAppId=8054c912-4e2a-44e0-8779-2d789a1e4315" rel="noopener noreferrer" target="_blank">Upscale Image</a> — <a href="https://help.runwayml.com/hc/en-us/articles/50985125862163-Upscale-Image" rel="noopener noreferrer" target="_blank">help article</a></li>
+<li><a class="internal-route" href="https://app.runwayml.com/?workflowAppId=d330ebf2-7bdf-4872-8ea4-0a139175e3bc" rel="noopener noreferrer" target="_blank">Character Renderer</a> — <a href="https://help.runwayml.com/hc/en-us/articles/50927278670099-Character-Renderer" rel="noopener noreferrer" target="_blank">help article</a></li>
+<li><a class="internal-route" href="https://app.runwayml.com/?workflowAppId=fac65454-4eb0-40fc-bb61-2639b5160b19" rel="noopener noreferrer" target="_blank">Story Panels</a> — <a href="https://help.runwayml.com/hc/en-us/articles/50985233945747-Story-Panels" rel="noopener noreferrer" target="_blank">help article</a></li>
+<li><a class="internal-route" href="https://app.runwayml.com/?workflowAppId=872ee68f-d5a2-4e1d-86f3-531dfa14aba4" rel="noopener noreferrer" target="_blank">Panel Upscaler</a> — <a href="https://help.runwayml.com/hc/en-us/articles/50985262792467-Panel-Upscaler" rel="noopener noreferrer" target="_blank">help article</a></li>
+<li><a class="internal-route" href="https://app.runwayml.com/?workflowAppId=793693d9-f04e-49fb-9d55-8baebeee0369" rel="noopener noreferrer" target="_blank">Runway Look</a> — <a href="https://help.runwayml.com/hc/en-us/articles/50985325975059-Runway-Look" rel="noopener noreferrer" target="_blank">help article</a></li>
+</ul>
+<h3>Video tools</h3>
+<ul>
+<li><a class="internal-route" href="https://app.runwayml.com/?app=edit-video" rel="noopener noreferrer" target="_blank">Edit Video</a> — <a href="https://help.runwayml.com/hc/en-us/articles/43176400374419-Creating-with-Aleph" rel="noopener noreferrer" target="_blank">Creating with Aleph</a></li>
+<li><a class="internal-route" href="https://app.runwayml.com/video-tools/ai-tools/generate?app=multi-shot&amp;mode=apps" rel="noopener noreferrer" target="_blank">Multi-Shot Video</a> — <a href="https://help.runwayml.com/hc/en-us/articles/51200254894483-Multi-Shot-Video" rel="noopener noreferrer" target="_blank">help article</a></li>
+<li><a class="internal-route" href="https://app.runwayml.com/video-tools/ai-tools/generate?app=scene-builder&amp;mode=apps" rel="noopener noreferrer" target="_blank">Scene Builder</a> — <a href="https://help.runwayml.com/hc/en-us/articles/51200261858835-Scene-Builder" rel="noopener noreferrer" target="_blank">help article</a></li>
+<li><a class="internal-route" href="https://app.runwayml.com/video-tools/ai-tools/generate?app=product-shot-builder&amp;mode=apps" rel="noopener noreferrer" target="_blank">Product Shot Video Builder</a> — <a href="https://help.runwayml.com/hc/en-us/articles/51200316594707-Product-Shot-Video-Builder" rel="noopener noreferrer" target="_blank">help article</a></li>
+<li><a class="internal-route" href="https://app.runwayml.com/?app=remove-anything" rel="noopener noreferrer" target="_blank">Remove from Video</a></li>
+<li><a class="internal-route" href="https://app.runwayml.com/?app=upscale-video" rel="noopener noreferrer" target="_blank">Upscale Video</a></li>
+<li><a class="internal-route" href="https://app.runwayml.com/?app=act-two" rel="noopener noreferrer" target="_blank">Performance Capture with Act-Two</a> — <a href="https://help.runwayml.com/hc/en-us/articles/42311337895827-Performance-Capture-with-Act-Two" rel="noopener noreferrer" target="_blank">help article</a></li>
+<li><a class="internal-route" href="https://app.runwayml.com/?app=change-background" rel="noopener noreferrer" target="_blank">Video Backdrop</a></li>
+<li><a class="internal-route" href="https://app.runwayml.com/?app=keyframes" rel="noopener noreferrer" target="_blank">Animate Keyframes</a></li>
+<li><a class="internal-route" href="https://app.runwayml.com/?app=add-dialogue" rel="noopener noreferrer" target="_blank">Image to Dialogue</a></li>
+<li><a class="internal-route" href="https://app.runwayml.com/?app=subject-references" rel="noopener noreferrer" target="_blank">References to Video</a></li>
+<li><a class="internal-route" href="https://app.runwayml.com/?app=art-style" rel="noopener noreferrer" target="_blank">Stylize Video</a></li>
+<li><a class="internal-route" href="https://app.runwayml.com/?app=color-grade" rel="noopener noreferrer" target="_blank">Color Grade Video</a></li>
+<li><a class="internal-route" href="https://app.runwayml.com/?app=relight-scene" rel="noopener noreferrer" target="_blank">Video Lighting</a></li>
+<li><a class="internal-route" href="https://app.runwayml.com/?app=change-weather" rel="noopener noreferrer" target="_blank">Video Weather</a></li>
+<li><a class="internal-route" href="https://app.runwayml.com/?app=change-time" rel="noopener noreferrer" target="_blank">Video Time of Day</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/51285026291219-Character-Script-to-Video" rel="noopener noreferrer" target="_blank">Character Script to Video</a></li>
+<li><a class="internal-route" href="https://app.runwayml.com/?mode=apps&amp;workflowAppId=e8ac706c-33a5-464b-92b6-f7797ee1a632" rel="noopener noreferrer" target="_blank">Character Swap</a></li>
+<li><a class="internal-route" href="https://app.runwayml.com/?workflowAppId=d6be8bed-802f-426f-a1d7-622d4a0a0143" rel="noopener noreferrer" target="_blank">Motion Sketch</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/51322758699411-Stitch-Videos" rel="noopener noreferrer" target="_blank">Stitch Videos</a></li>
+</ul>
+<h3>Audio tools</h3>
+<ul>
+<li><a class="internal-route" href="https://app.runwayml.com/?app=sfx" rel="noopener noreferrer" target="_blank">SFX</a></li>
+<li><a class="internal-route" href="https://app.runwayml.com/?app=stylize-audio" rel="noopener noreferrer" target="_blank">Stylize Audio</a></li>
+</ul>
+<h3>Collections and grouped use cases</h3>
+<ul>
+<li><span class="nolink">Starter Kits</span> <span class="small">— Quick-start grouped entry points; no confident standalone public URL found.</span></li>
+<li><span class="nolink">Collections</span> <span class="small">— Grouped bundles of tools/models observed in-app.</span></li>
+<li><span class="nolink">Explore Gen-4.5</span> — <a href="https://help.runwayml.com/hc/en-us/articles/46974685288467-Creating-with-Gen-4-5" rel="noopener noreferrer" target="_blank">Gen-4.5 documentation</a></li>
+<li><span class="nolink">Apps for Advertising</span> — <a href="https://help.runwayml.com/hc/en-us/articles/50985073403283-Create-Ad" rel="noopener noreferrer" target="_blank">Create Ad</a>; <a href="https://help.runwayml.com/hc/en-us/articles/50926961511187-Ad-Concepter" rel="noopener noreferrer" target="_blank">Ad Concepter</a>; <a href="https://help.runwayml.com/hc/en-us/articles/51200316594707-Product-Shot-Video-Builder" rel="noopener noreferrer" target="_blank">Product Shot Video Builder</a></li>
+<li><span class="nolink">Endless Reshoots</span> — <a href="https://help.runwayml.com/hc/en-us/articles/50984458662675-Product-Reshoot" rel="noopener noreferrer" target="_blank">Product Reshoot</a></li>
+<li><span class="nolink">Finishing Touches</span> — <a class="internal-route" href="https://app.runwayml.com/?app=upscale-video" rel="noopener noreferrer" target="_blank">Upscale Video</a>; <a class="internal-route" href="https://app.runwayml.com/?app=color-grade" rel="noopener noreferrer" target="_blank">Color Grade</a>; <a class="internal-route" href="https://app.runwayml.com/?app=relight-scene" rel="noopener noreferrer" target="_blank">Lighting</a></li>
+</ul>
+</section>
+<section id="models-workflows">
+<h2>4. Models and Workflows</h2>
+<p class="path-note">Use this section when choosing a model family, learning a model, or building/publishing workflow-based tools.</p>
+<h3>Model documentation</h3>
+<ul>
+<li><a href="https://help.runwayml.com/hc/en-us/sections/50990795422739-Model-Guides" rel="noopener noreferrer" target="_blank">Model Guides</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/48649877897107-Available-Models-on-Runway" rel="noopener noreferrer" target="_blank">Available Models on Runway</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/50488490233363-Creating-with-Seedance-2-0" rel="noopener noreferrer" target="_blank">Seedance 2.0</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/46974685288467-Creating-with-Gen-4-5" rel="noopener noreferrer" target="_blank">Gen-4.5</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/37327109429011-Creating-with-Gen-4-Video" rel="noopener noreferrer" target="_blank">Gen-4 Video</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/43176400374419-Creating-with-Aleph" rel="noopener noreferrer" target="_blank">Gen-4 Aleph / Aleph</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/50280558448147-Creating-with-Kling-3-0-Motion-Control" rel="noopener noreferrer" target="_blank">Kling variants</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/51111417337363-Creating-images-with-GPT-Image-2" rel="noopener noreferrer" target="_blank">GPT Image 2</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/50317213804435-Creating-images-with-Nano-Banana" rel="noopener noreferrer" target="_blank">Nano Banana</a></li>
+<li><span class="nolink">Veo, WAN, FLUX, Seedream, and HappyHorse variants</span> <span class="small">— Model-family entries are best checked through <a href="https://help.runwayml.com/hc/en-us/articles/48649877897107-Available-Models-on-Runway" rel="noopener noreferrer" target="_blank">Available Models on Runway</a>; no separate public help article is included here for every variant.</span></li>
+</ul>
+<h3>Workflow documentation</h3>
+<ul>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/45763528999699-Introduction-to-Workflows" rel="noopener noreferrer" target="_blank">Introduction to Workflows</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/45769159004691-Building-your-first-Workflows" rel="noopener noreferrer" target="_blank">Building your first Workflows</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/47865876793747-Publishing-Workflows-as-Apps" rel="noopener noreferrer" target="_blank">Publishing Workflows as Apps</a></li>
+<li><a href="https://academy.runwayml.com/tutorial/creating-consistent-sequences-with-runway" rel="noopener noreferrer" target="_blank">Creating Consistent Sequences with Workflows</a></li>
+</ul>
+</section>
+<section id="assets">
+<h2>5. Assets and Workspaces</h2>
+<p class="path-note">Use this section when looking for generated media, uploaded files, shared assets, folders, favorites, or workspace-management documentation.</p>
+<h3>Asset library</h3><p class="small">Open the Runway app first, then use the left sidebar to reach Assets, All Generations, All Assets, Private, Shared, or Favorited views.</p>
+<ul>
+<li><a class="internal-route" href="https://app.runwayml.com/" rel="noopener noreferrer" target="_blank">Assets</a> — <a href="https://help.runwayml.com/hc/en-us/sections/4402458956051-Assets" rel="noopener noreferrer" target="_blank">Assets documentation</a></li>
+<li><a class="internal-route" href="https://app.runwayml.com/" rel="noopener noreferrer" target="_blank">All Generations / All Assets</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/23998498329107-How-to-organize-assets" rel="noopener noreferrer" target="_blank">Private assets / How to organize assets</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/22471756509331-Sharing-assets-to-a-teamspace" rel="noopener noreferrer" target="_blank">Shared assets / Sharing assets to a teamspace</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/24298206897043-Navigating-Runway" rel="noopener noreferrer" target="_blank">Favorited assets</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/25562277393427-How-to-share-an-asset" rel="noopener noreferrer" target="_blank">How to share an asset</a></li>
+</ul>
+<h3>Workspaces</h3>
+<ul>
+<li><a href="https://help.runwayml.com/hc/en-us/categories/25281254691219-Assets-Workspaces" rel="noopener noreferrer" target="_blank">Assets &amp; Workspaces</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/26120892253843-Introduction-to-workspaces" rel="noopener noreferrer" target="_blank">Introduction to workspaces</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/10282588336915-Workspace-settings" rel="noopener noreferrer" target="_blank">Workspace settings</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/43196586420755-Introduction-to-Workspace-Management" rel="noopener noreferrer" target="_blank">Introduction to Workspace Management</a></li>
+</ul>
+</section>
+<section id="account-billing">
+<h2>6. Account, Billing, Credits, and Invoices</h2>
+<p class="path-note">Use this section for account profile, notifications, credits, subscription, workspace members, invoices, and credit usage.</p>
+<ul>
+<li><a class="internal-route" href="https://app.runwayml.com/settings/" rel="noopener noreferrer" target="_blank">Account Profile / My Account</a> — <a href="https://help.runwayml.com/hc/en-us/sections/1500002753542-Account-Management" rel="noopener noreferrer" target="_blank">Account Management</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/4402099751571-Managing-general-account-settings" rel="noopener noreferrer" target="_blank">General account settings</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/4402074756499-Managing-browser-and-email-notifications" rel="noopener noreferrer" target="_blank">Browser and email notifications</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/15124877443219-How-do-credits-work" rel="noopener noreferrer" target="_blank">How credits work</a></li>
+<li><a class="internal-route" href="https://app.runwayml.com/settings/billing" rel="noopener noreferrer" target="_blank">Plans &amp; Billing</a> — <a href="https://help.runwayml.com/hc/en-us/categories/25281314499987-Account-Billing" rel="noopener noreferrer" target="_blank">Account &amp; Billing</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/18559561461523-Managing-your-Workspace-Subscription" rel="noopener noreferrer" target="_blank">Managing your Workspace Subscription</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/43198398846611-Managing-Workspace-Members" rel="noopener noreferrer" target="_blank">Managing Workspace Members</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/10312703076371-Workspace-members-roles" rel="noopener noreferrer" target="_blank">Workspace members &amp; roles</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/40560165235091-Accessing-Your-Invoices" rel="noopener noreferrer" target="_blank">Accessing Your Invoices</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/49360546301331-Managing-Credit-Spend-Notifications" rel="noopener noreferrer" target="_blank">Managing Credit Spend Notifications</a></li>
+</ul>
+</section>
+<section id="support-learning">
+<h2>7. Support, Troubleshooting, and Learning</h2>
+<p class="path-note">Use this section when learning Runway, troubleshooting a tool, checking resources, or looking for official support documentation.</p>
+<ul>
+<li><a href="https://help.runwayml.com/hc/en-us" rel="noopener noreferrer" target="_blank">Help Center home</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/categories/1500001930562-Creating-with-Runway" rel="noopener noreferrer" target="_blank">Creating with Runway</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/sections/24287313477523-Getting-Started" rel="noopener noreferrer" target="_blank">Getting Started</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/sections/43433672807059-Introduction-to-Runway" rel="noopener noreferrer" target="_blank">Introduction to Runway</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/24298206897043-Navigating-Runway" rel="noopener noreferrer" target="_blank">Navigating Runway</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/sections/4402458941459-Generative-Tools" rel="noopener noreferrer" target="_blank">Generative Tools</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/25287838007059-How-to-troubleshoot-a-tool-that-isn-t-working-properly" rel="noopener noreferrer" target="_blank">Tool troubleshooting</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/categories/25272506457235-Troubleshooting" rel="noopener noreferrer" target="_blank">Troubleshooting category</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/sections/25274188415251-Platform-Troubleshooting" rel="noopener noreferrer" target="_blank">Platform troubleshooting</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/sections/25274334761619-Getting-Technical-Help" rel="noopener noreferrer" target="_blank">Getting technical help</a></li>
+<li><a href="https://help.runwayml.com/hc/en-us/articles/37464713358099-Runway-Resources" rel="noopener noreferrer" target="_blank">Runway Resources</a></li>
+<li><a href="https://academy.runwayml.com/" rel="noopener noreferrer" target="_blank">Runway Academy home</a></li>
+<li><a href="https://academy.runwayml.com/courses" rel="noopener noreferrer" target="_blank">Courses &amp; Tutorials</a></li>
+</ul>
+</section>
+<section id="verification-note">
+<h2>8. Link Confidence and App-Route Note</h2>
+<p>Public Runway website, Help Center, Academy, pricing, changelog, Watch, and product links are intended as verified public destinations whose visible page content matches the listed subject. Links to <code>app.runwayml.com</code> are publicly reachable internal app routes, but many signed-in destinations are JavaScript-gated, workspace-dependent, role-dependent, or rollout-dependent; therefore their exact in-app landing content cannot always be independently verified from public page content. For that reason, v12 avoids brittle workspace-specific routes such as team/guest paths and favors the generic app entry point when an internal deep link is not safely reusable. Entries without links are preserved as observed or useful navigation labels when no sufficiently confident URL was available.</p>
+</section>
+</div>
+</main>
+<footer>
+<div class="wrap">Runway Sitemap v12 — organized by navigation utility, with public-link confidence and app-route limitations consolidated at the end.</div>
+</footer>
+</body>
+</html>
